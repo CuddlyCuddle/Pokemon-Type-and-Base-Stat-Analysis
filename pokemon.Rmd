@@ -1,0 +1,22 @@
+---
+title: "Pokemon Anlysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rvest)
+library(selectr)
+library(xml2)
+```
+
+##
+```{r}
+url = "https://pokemondb.net/pokedex/all"
+pokedex_url <- read_html(url) %>%
+  html_nodes("div ")
+  
+
+
+```
+
